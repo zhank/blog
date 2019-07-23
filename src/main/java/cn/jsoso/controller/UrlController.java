@@ -38,9 +38,28 @@ public class UrlController {
     }
 
     //
-    @GetMapping("modList")
-    public String getModList() {
-        return "modList";
+    @GetMapping("moodList")
+    public String getMoodList() {
+        return "moodList";
     }
+
+    //header
+    @GetMapping("header")
+    public String getHeader() {
+        return "header";
+    }
+
+    //footer
+    @GetMapping("footer")
+    public String getFooter() {
+        return "footer";
+    }
+
+    //messageInput
+    @GetMapping("messageInput")
+    public String getMessageInput() {
+        return "messageInput";
+    }
+
 
 }

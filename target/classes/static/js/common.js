@@ -12,4 +12,8 @@ var backToTopFun = function() {
 	$(function(){
 		$(window).on("scroll",backToTopFun);
 		backToTopFun();
+
+		/*导入头部和尾部*/
+		$("#header").load("header");
+		$("#footer").load("footer");
 	});
