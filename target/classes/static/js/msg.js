@@ -46,11 +46,30 @@ function getMsgCount() {
         contentType: "application/json",
         success: function(result) {
             if (result.code == 200) {
+                var totalRecord = result.data;
+                var totalPage  = Math.ceil(totalRecord/ 10);
+
+
+                var element = $('#pageUl');
+                var options = {
+                    bootstrapMajorVersion:3, //bootstrap的版本要求
+                    currentPage: 1,          //设置当前页
+                    numberOfPages: totalPage,		 //设置可以点击到的页数范围
+                    totalPages:totalPage,           //设置总页数
+                    //          numberOfPages:5        //一页列出多少数据
+                    onPageClicked:function(event, originalEvent, type, page) {
+                        initMessage(page);
+                    }
+                }
+                element.bootstrapPaginator(options);
+
                 $("#msgCount").text(result.data);
             }
         }
     });
 }
+
+
 
 function sendMsg() {
     var oLi = $("#comments .list li");
@@ -90,6 +109,8 @@ function sendMsg() {
 function initMessage(pageNum) {
     if(pageNum == undefined || pageNum == "") {
         pageNum = 1;
+    } else {
+        $('#comments .list ul li').remove();
     }
     $.ajax({
         type: "GET",
