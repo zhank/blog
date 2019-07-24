@@ -1,3 +1,5 @@
+<script type="text/javascript" src="js/msg.js"></script>
+<script type="text/javascript" src="js/bootstrap-paginator.js"></script>
 <h4>
   <i class="fa fa-pencil"></i>发表评论
   <span>
@@ -5,45 +7,39 @@
       <small>取消回复</small></a>
   </span>
 </h4>
+<div id="msgBox">
 <form id="frmSumbit" target="_self" action="" onsubmit="return false">
-  <input type="hidden" name="inpId" id="inpId" value="2">
-  <input type="hidden" name="inpRevID" id="inpRevID" value="0">
   <div class="comt-box">
     <div class="form-group message form-name">
-      <input type="text" id="inpName" class="text" value="" name="inpName" tabindex="1" placeholder="昵称">
-      <input type="hidden" name="tverify" id="tverify" value="47846bae66a8b6e856d89c813f6db965"></div>
-    <div class="form-group message form-email">
-      <input type="text" id="inpEmail" class="text" name="inpEmail" tabindex="2" placeholder="邮箱"></div>
+      <input type="text" id="inpName" class="text" value="" name="inpName" tabindex="1" placeholder="昵称"></div>
+
+      <div class="form-group form-email" id="face" >
+       <img src="img/msgface/face1.gif" class="current" />
+                    <img src="img/msgface/face2.gif" />
+                    <img src="img/msgface/face3.gif" />
+                    <img src="img/msgface/face4.gif" />
+                    <img src="img/msgface/face5.gif" />
+                    <img src="img/msgface/face6.gif" />
+                    <img src="img/msgface/face7.gif" />
+        </div>
+      <!--
+<div class="form-group messatools_textge form-email" >
+              <input type="text" id="inpEmail" class="text" name="inpEmail" tabindex="2" placeholder="邮箱"></div>
     <div class="form-group message form-www">
       <input type="text" id="inpHomePage" name="inpHomePage" class="text" tabindex="3" placeholder="网址"></div>
+       -->
   </div>
+
   <!--verify-->
   <div id="comment-tools">
     <div class="tools_text">
-      <textarea placeholder="请遵守相关法律与法规，文明评论。O(∩_∩)O~~" name="txaArticle" id="txaArticle" class="text input-block-level comt-area" cols="50" rows="4" tabindex="5"></textarea>
+      <textarea maxlength="140" placeholder="请遵守相关法律与法规，文明评论。O(∩_∩)O~~" name="txaArticle" id="txaArticle" class="text input-block-level comt-area" cols="50" rows="4" tabindex="5"></textarea>
+    </div>
+    <div>
+        <input name="sumbit" type="submit" tabindex="6" value="提交" onclick="sendMsg()" class="button">
+        <span class="countTxt">还能输入</span><strong class="maxNum">140</strong><span>个字</span>
     </div>
   </div>
-  <p>
-    <input name="sumbit" type="submit" tabindex="6" value="提交" onclick="sendMsg()" class="button"></p>
 </form>
 
-<script type="text/javascript">
-    function sendMsg() {
-                var username = $("#inpName").val();
-               /* var password = $("#inpEmail").val();
-                var url = $("#inpHomePage").val();*/
-                messageContent = $("#txaArticle").val().replace('<br/>', '/n');
-                alert("messageContent" + messageContent);
-                $.ajax({
-                    type: "POST",
-                    dataType: "json",
-                    url: '/msg/addMsg',
-                    contentType: "application/json",
-                    data:JSON.stringify({"username": username, "messageContent": messageContent}),
-                    success: function (result) {
-                        console.log("data is :" + result)
-                        alert(result.data);
-                    }
-                });
-            }
-</script>
+</div>

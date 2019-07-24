@@ -1,5 +1,9 @@
 package cn.jsoso.service;
 
+import cn.jsoso.entity.TbMessage;
+
+import java.util.List;
+
 public interface MessageService {
 
     /**
@@ -7,4 +11,8 @@ public interface MessageService {
      * @return
      */
     public int getMessageCount();
+
+    public int insertUserMsg(TbMessage TbMessage);
+
+    public List<TbMessage> getMessageList(int pageNum, int pageSize);
 }

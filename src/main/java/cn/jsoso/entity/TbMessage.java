@@ -16,18 +16,18 @@ public class TbMessage {
     private String messageId;
 
     //用户ID
-    private String userId;
-
-    //标题
-    private String messageTitle;
-
-    //作者 一般只有没有userId时，默认为游客登录系统才会自动填充此值
-    private String messageAuthor;
+    private String userName;
 
     //留言内容
-    private String messageContent;
+    private String msgContent;
+
+    //用户IP
+    private String userIp;
 
     //留言时间
-    private Date messageTime;
+    private Date msgDate;
+
+    //头像Url
+    private String headUrl;
 
 }
