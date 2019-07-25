@@ -16,4 +16,15 @@ $(function () {
     /*导入头部和尾部*/
     $("#header").load("header");
     $("#footer").load("footer");
+
+    //这里写时间到后执行的代码
+      setTimeout(function(){
+    var ali = $("#starlist li");
+    $("#starlist li").click(function () {
+        for (i = 0; i < ali.length; i++) {
+            ali[i].className = ""
+        };
+        this.className = "selected";
+    });
+     }, 1200);
 });

@@ -1,127 +1,34 @@
 html,body{
-	height: 100%;
-	background: #ededed;
+	height:100%;
+	font: 15px "Microsoft YaHei", Arial, Helvetica, sans-serif;
+}
+ul, li {
+	list-style: none;
 }
 *{
 	box-sizing: border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 a,a:hover{
 	text-decoration: none;
 	color: #333;
 }
 /********************头部开始*********************/
-.w_header{
-	height: 55px;
-	margin-bottom: -55px;
-	/*position:relative;*/
-	position: fixed;
-	z-index:999;
-	width: 100%;
-	background: #000;
-	box-shadow:1px 3px 5px #39F;
-	opacity:.90;
-}
-.w_header_top{
-	height: 55px;
-}
-.w_logo{
-	width: 220px;
-	height: 55px;
-	background-image: url(../img/Jsoso.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	float: left;
-}
-/*.w_slogan{
-	display: inline-block;
-	font-size: 30px;
-	font-weight: 800;
-	margin-top: 30px;
-	margin-left: 20px;
-}*/
-.w_search{
-	float: right;
-	padding-right: 10px;
-	padding-left: 10px;
-	height: 80px;
-}
-.w_search .w_searchbox{
-	margin-top: 15px;
-	border-radius: 30px;
+/* css */
 
-}
-.w_search .w_searchbox>input{
-	border: none;
-	/*height: 30px;*/
-	padding: 5px;
-	border-radius: 2px;
-	font-size: 14px;
-	border-top-left-radius: 3px;
-	border-bottom-left-radius: 3px;
-}
-.w_search .w_searchbox>input:focus{
-	outline: none;
-}
-.w_search .w_searchbox>button{
-	border: none;
-	height: 30px;
-	margin-left: -5px;
-	background-color: #DEDBDB;
-	width: 60px;
-	font-size: 14px;
-	border-top-right-radius: 3px;
-	border-bottom-right-radius: 3px;
-
-}
-
-.w_header_nav{
-	/*display: inline-block;*/
-	/*font-weight: 800;*/
-	margin-top: 20px;
-	/*margin-left: 20px;*/
-}
-.w_header_nav>ul{
-	padding: 0px;
-	margin: 0px;
-}
-.w_header_nav>ul>li{
-	float: left;
-	display: inline;
-	/*position:relative;*/
-	padding: 17.5px 0px;
-}
-.w_header_nav>ul>li>a{
-	/*margin: 17.5px 0px;*/
-	color: #eee;
-	font-size:14px;
-	/*font-weight:bold;*/
-	text-transform:uppercase;
-	line-height: 10px;
-	height: 10px;
-	width: 80px;
-	display: inline-block;
-	text-align: center;
-	font-family:"Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.w_header_nav>ul>li:hover{
-	background: #999;
-}
-.w_header_nav>ul>li>a.active{
-	color: #619d21;
-}
 /********************头部结束*********************/
 
 /********************containner开始*********************/
 .w_container{
 	min-height: 100%;
 	padding: 55px 0px 40px 0px;
+	background: #e6e6e6;
 }
 .w_main_row{
-	/*padding-left: 15px;
-	padding-right: 15px;*/
-
+	background:#fff;
 }
 .w_main_left{
 	margin: 20px 0px;
@@ -284,31 +191,7 @@ a,a:hover{
 
 /********************containner结束*********************/
 /********************底部开始*********************/
-.w_foot{
-	height: 40px;
 
-	margin-top: -40px;
-}
-.w_foot_link{
-	height: 110px;
-	background: #DDD;
-	text-align: center;
-	font-family: "微软雅黑";
-	padding-top: 10px;
-}
-.w_foot_copyright{
-	height: 40px;
-	text-align: center;
-	padding-top: 10px;
-	background: #414141;
-	color:#b2bcc5;
-	font-size:13px;
-}
-.w_foot_copyright>a{
-	color:#b2bcc5;
-	text-decoration:none;
-	font-size:13px;
-}
 
 /* totop */
 .toTop{position:fixed;bottom:10px;right:20px; z-index:999;display:none; font-size:16px;cursor: pointer;overflow:hidden;visibility:visible; background-color:#fff;border: 1px solid #d9d9d9;color: #9c9c9c;font-size: 16px;width: 38px;height: 38px;line-height: 38px;text-align: center; text-decoration:none;_position:absolute;_top:expression(documentElement.scrollTop + documentElement.clientHeight-this.offsetHeight)}
@@ -334,7 +217,7 @@ a,a:hover{
 		height: 200px;
 	}
 	.w_logo{
-	    background: url(../img/Jsoso1.png) no-repeat center;
+	    background: url(../img/JsosoBlack.png) no-repeat center;
         width: 55px;
 	}
 	.w_header_nav>ul>li>a{width: 50px;}
@@ -403,7 +286,7 @@ a,a:hover{
 }
 .commentList{
 	margin-top: 25px;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 
 }
 #comments .comment-tab {
@@ -448,24 +331,24 @@ a,a:hover{
 #face {
 	top: 0;
 	left:30px;
-	width: 80%;
 	line-height: 41px;
 }
 #face img:hover, #face img.current {
-	width: 37px;
-	height: 37px;
+	width: 58px;
+	height: 58px;
 	border: 1px solid #f60;
 	opacity: 1;
 	filter: alpha(opacity=100);
 }
 
 #face img {
-	width: 37px;
-	height: 37px;
+	width: 55px;
+	height: 55px;
 	cursor: pointer;
 	margin-right: 6px;
 	opacity: 0.5;
 	filter: alpha(opacity=50);
+	display: inline-block;
 }
 .msgBox img {
 	border-radius: 3px;
@@ -482,7 +365,6 @@ a,a:hover{
 	padding: 0 5px;
 }
 #comments .list {
-	padding: 10px;
 }
 #comments .list ul {
 	overflow: hidden;
@@ -500,30 +382,36 @@ a,a:hover{
 }
 #comments .list .userPic {
 	float: left;
-	width: 50px;
-	height: 50px;
+	width: 11%;
 	display: inline;
-	margin-left: 10px;
-	border: 1px solid #ccc;
 	border-radius: 3px;
+	padding: 14px;
 }
-#comments img {
+#comments .userPic img {
 	border-radius: 3px;
+	width: 70px;
+	height: 70px;
 }
 #comments .list .content {
 	float: left;
-	width: 400px;
+	width: 85%;
 	font-size: 14px;
-	margin-left: 10px;
-	font-family: arial;
+	font-family: Play, å¾®è½¯é›…é»‘, "Microsoft YaHei UI", "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 	word-wrap: break-word;
+	padding: 11px 22px 0px;
 }
 #comments .list .userName {
-	display: inline;
-	padding-right: 5px;
+
+}
+
+#comments .list .userName a{
+	font-size: 14px;
+	font-weight: 700;
+	color: #657487
 }
 #comments .list .msgInfo {
-	display: inline;
+	padding: 10px 0px 10px;
+	word-break: break-all;
 	word-wrap: break-word;
 }
 #comments .list .times {
@@ -534,7 +422,13 @@ a,a:hover{
 	zoom: 1;
 }
 #comments .list .times span {
-	float: left;
+	float: right;
+	color: #c0ccda;
+	font-size: 13px;
+	margin-left: 7px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
 #comments .list .times a {
 	float: right;
@@ -543,9 +437,6 @@ a,a:hover{
 }
 #msgCount{
 	color:#E1171B;font-size: 20px;
-}
-body{
-	font-family: 'Microsoft Yahei'
 }
 #pageUl li{
 	cursor: pointer;

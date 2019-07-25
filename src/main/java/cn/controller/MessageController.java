@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping("msg")
 public class MessageController {
 
-    private static int pageSize = 10;
+    private static int pageSize = 8;
 
     @Autowired
     private MessageService messageService;

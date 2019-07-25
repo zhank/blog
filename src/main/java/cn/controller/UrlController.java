@@ -61,5 +61,10 @@ public class UrlController {
         return "messageInput";
     }
 
+    //时间轴
+    @GetMapping("time")
+    public String getTime() {
+        return "time";
+    }
 
 }
