@@ -349,6 +349,7 @@ a,a:hover{
 	opacity: 0.5;
 	filter: alpha(opacity=50);
 	display: inline-block;
+	border-radius: 50%;
 }
 .msgBox img {
 	border-radius: 3px;
@@ -391,6 +392,7 @@ a,a:hover{
 	border-radius: 3px;
 	width: 70px;
 	height: 70px;
+	border-radius: 50%;
 }
 #comments .list .content {
 	float: left;

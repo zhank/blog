@@ -67,4 +67,10 @@ public class UrlController {
         return "time";
     }
 
+    //时间轴
+    @GetMapping("edit")
+    public String getEdit() {
+        return "edit";
+    }
+
 }
