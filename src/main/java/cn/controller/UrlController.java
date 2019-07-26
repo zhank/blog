@@ -73,4 +73,10 @@ public class UrlController {
         return "edit";
     }
 
+    //测试
+    @GetMapping("test")
+    public String getTest() {
+        return "test";
+    }
+
 }

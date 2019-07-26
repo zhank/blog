@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ac25044-6111-4ac5-a7c1-38e46e060992" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/controller/ArticleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/dao/ArticleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/entity/TbArticle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/entity/TbKeyword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/service/ArticleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap-wysiwyg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.hotkeys.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/controller/UrlController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/controller/UrlController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/sql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/sql.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/article_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/article_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/article.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/article_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/article_detail.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,13 +38,54 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/common.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="399">
               <caret line="394" column="23" selection-start-line="394" selection-start-column="23" selection-end-line="394" selection-end-column="23" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/controller/UrlController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
+              <folding>
+                <element signature="e#1156#1157#0" expanded="true" />
+                <element signature="e#1193#1194#0" expanded="true" />
+                <element signature="e#1258#1259#0" expanded="true" />
+                <element signature="e#1287#1288#0" expanded="true" />
+                <element signature="e#1352#1353#0" expanded="true" />
+                <element signature="e#1381#1382#0" expanded="true" />
+                <element signature="e#1451#1452#0" expanded="true" />
+                <element signature="e#1480#1481#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/jquery.hotkeys.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/bootstrap-wysiwyg.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -66,7 +99,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>form-g</find>
       <find>oConBox</find>
       <find>inpName</find>
       <find>#msgBox</find>
@@ -96,6 +128,7 @@
       <find>w_foot</find>
       <find>selected</find>
       <find>oncli</find>
+      <find>userP</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -107,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/cn/jsoso/util/EmptyUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/jsoso/util/Msg.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/jsoso/constant/Msg.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/jsoso/constant/ResultMsg.java" />
@@ -154,10 +186,11 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/entity/TbKeyword.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/service/ArticleService.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/dao/ArticleDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/controller/UrlController.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/controller/ArticleController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/edit.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/common.css" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/controller/UrlController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/test.html" />
       </list>
     </option>
   </component>
@@ -192,8 +225,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="170" />
-    <option name="y" value="52" />
+    <option name="x" value="52" />
+    <option name="y" value="57" />
     <option name="width" value="1852" />
     <option name="height" value="950" />
   </component>
@@ -254,15 +287,6 @@
               <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -280,15 +304,12 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -308,7 +329,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/js" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -326,8 +347,8 @@
       <recent name="cn.jsoso.constant" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\workspace\blog\src\main\resources\static\css" />
       <recent name="E:\workspace\blog\src\main\resources\static\js" />
+      <recent name="E:\workspace\blog\src\main\resources\static\css" />
       <recent name="E:\workspace\blog\src\main\resources\templates" />
       <recent name="E:\workspace\blog\src\main\resources\static\img" />
       <recent name="D:\workspace\blog\blog" />
@@ -404,7 +425,7 @@
       <workItem from="1563842037077" duration="25476000" />
       <workItem from="1563926873054" duration="24145000" />
       <workItem from="1563970484505" duration="50000" />
-      <workItem from="1564099232954" duration="16150000" />
+      <workItem from="1564099232954" duration="17601000" />
     </task>
     <task id="LOCAL-00001" summary="系统搭建 springboot2.X">
       <created>1563848681646</created>
@@ -434,15 +455,21 @@
       <option name="project" value="LOCAL" />
       <updated>1564106951338</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="留言版开发, 样式完善">
+      <created>1564133309564</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1564133309564</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92441000" />
+    <option name="totallyTimeSpent" value="93892000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="170" y="52" width="1852" height="950" extended-state="0" />
-    <editor active="true" />
+    <frame x="52" y="57" width="1852" height="950" extended-state="0" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
@@ -540,16 +567,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://E:/m2/repository/org/springframework/spring-web/5.1.8.RELEASE/spring-web-5.1.8.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/service/MessageService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/service/impl/MessageServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/config/MyBatisConfig.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/plugin/jquery.min.js" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/bootstrap-paginator.js" />
@@ -816,21 +833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/controller/UrlController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
-          <folding>
-            <element signature="e#1156#1157#0" expanded="true" />
-            <element signature="e#1193#1194#0" expanded="true" />
-            <element signature="e#1258#1259#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1357#1358#0" expanded="true" />
-            <element signature="e#1386#1387#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/entity/TbKeyword.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -856,6 +858,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="394" column="23" selection-start-line="394" selection-start-column="23" selection-end-line="394" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/bootstrap-wysiwyg.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/controller/UrlController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
+          <folding>
+            <element signature="e#1156#1157#0" expanded="true" />
+            <element signature="e#1193#1194#0" expanded="true" />
+            <element signature="e#1258#1259#0" expanded="true" />
+            <element signature="e#1287#1288#0" expanded="true" />
+            <element signature="e#1352#1353#0" expanded="true" />
+            <element signature="e#1381#1382#0" expanded="true" />
+            <element signature="e#1451#1452#0" expanded="true" />
+            <element signature="e#1480#1481#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/jquery.hotkeys.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
