@@ -2,12 +2,11 @@ $(document).ready(function () {
 	//nav
 	var oH2 = document.getElementById("mnavh"); 
 	var oUl = document.getElementById("starlist");  
-	oH2.onclick = function ()
-	{
+	oH2.click(function () {
 		var style = oUl.style;
 		style.display = style.display == "block" ? "none" : "block";
 		oH2.className = style.display == "block" ? "open" : ""
-	}
+	});
 		
     var obj=null;
     var As=document.getElementById('starlist').getElementsByTagName('a');

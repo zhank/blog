@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>个人博客</title></head>
-<link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/common.css"/>
 <link rel="stylesheet" type="text/css" href="css/base.css"/>
 <link href="logo.ico" rel="shortcut icon"/>
@@ -11,7 +11,32 @@
 
 <body>
 <!-- header -->
-<div id="header"></div>
+<header class="header-navigation" id="header">
+  <nav>
+    <div class="logo"></div>
+    <h2 id="mnavh"><span class="navicon"></span></h2>
+ <ul id="starlist">
+<li><a href="index.html" >首页</a></li>
+<li><a href="about.html">关于我</a></li>
+<li><a href="technology.html">技术论坛</a></li>
+<li><a href="life.html">生活</a></li>
+<li><a href="time.html">时间轴</a></li>
+<li class="selected"><a href="comment.html">留言</a></li>
+    </ul>
+    <div class="searchbox">
+    <div id="search_bar" class="search_bar">
+      <form id="searchform" action="" method="post" name="searchform">
+        <input class="input" placeholder="想搜点什么呢.." type="text" name="keyboard" id="keyboard">
+        <input type="hidden" name="show" value="title">
+        <input type="hidden" name="tempid" value="1">
+        <input type="hidden" name="tbname" value="news">
+        <input type="hidden" name="Submit" value="搜索">
+        <p class="search_ico"> <span></span></p>
+      </form>
+     </div>
+    </div>
+  </nav>
+</header>
 <div class="w_container" id="comments" name="top">
     <div class="container">
         <div class="row w_main_row">
