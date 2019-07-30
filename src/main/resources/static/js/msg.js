@@ -13,6 +13,14 @@ $(function () {
             };
             this.className = "current";
         });
+
+        // 可输入字数监听  延迟加载才能生效
+        $("#txaArticle").keyup(function () {
+            if ($("#txaArticle").val().length > 140) {
+                $("#txaArticle").val($("#txaArticle").val().substring(0, 140));
+            }
+            $(".maxNum").text(140 - $("#txaArticle").val().length);
+        });
     }, 1200);
 
     var ali = $("#starlist li");
@@ -41,13 +49,6 @@ var get = {
     }
 };
 
-// 可输入字数监听
-$("#txaArticle").keyup(function () {
-    if ($("#txaArticle").val().length > 140) {
-        $("#txaArticle").val($("#txaArticle").val().substring(0, 140));
-    }
-    $(".maxNum").text(140 - $("#txaArticle").val().length);
-});
 //格式化时间, 如果为一位数时补0
 function format(str) {
     return str.toString().replace(/^(\d)$/, "0$1")

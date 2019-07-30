@@ -2,10 +2,14 @@ package cn.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class UrlController {
+
+    @GetMapping("/")
+    public String getIndex_1() {
+        return "index";
+    }
 
     //首页
     @GetMapping("index")
@@ -43,12 +47,6 @@ public class UrlController {
         return "moodList";
     }
 
-    //header
-    @GetMapping("header")
-    public String getHeader() {
-        return "header";
-    }
-
     //footer
     @GetMapping("footer")
     public String getFooter() {
@@ -74,9 +72,9 @@ public class UrlController {
     }
 
     //测试
-    @GetMapping("test")
+    @GetMapping("writeArticle")
     public String getTest() {
-        return "test";
+        return "writeArticle";
     }
 
 }

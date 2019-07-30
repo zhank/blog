@@ -39,3 +39,7 @@ spring:
         mode: LEGACYHTML5
         prefix: classpath:/templates/
         suffix: .html
+system:
+    filepath: E:\workspace\images
+    #windows下用这个filepath: D:\temp\upload   linux :/vdb1/xxx/vue/resources
+    urlpath: http://127.0.0.1:8090/uploadImg/
