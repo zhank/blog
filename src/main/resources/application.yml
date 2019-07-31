@@ -1,6 +1,14 @@
 server:
     port: 8090
+    tomcat:
+        uri-encoding: UTF-8
 spring:
+
+    http:
+        encoding:
+            charset: UTF-8
+            force: true
+            enabled: true
     datasource:
         driver-class-name: com.mysql.cj.jdbc.Driver
         password: 123456
@@ -39,6 +47,20 @@ spring:
         mode: LEGACYHTML5
         prefix: classpath:/templates/
         suffix: .html
+    mail:
+        host: smtp.163.com
+        password: zhangkai0515
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    socketFactory:
+                        class: javax.net.ssl.SSLSocketFactory
+                        port: 465
+                    starttls:
+                        enable: true
+                        required: true
+        username: sfpy_zk@163.com
 system:
     filepath: E:\workspace\images
     #windows下用这个filepath: D:\temp\upload   linux :/vdb1/xxx/vue/resources

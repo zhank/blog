@@ -37,9 +37,9 @@ public class TbArticle {
     private String keywordIds;
 
     //留言时间
-    private Date msgDate;
+    private Date articleCreate;
 
-    //头像Url
-    private String headUrl;
+    //修改时间
+    private Date articleUpdate;
 
 }
