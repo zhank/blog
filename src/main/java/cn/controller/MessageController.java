@@ -3,7 +3,7 @@ package cn.controller;
 import cn.constant.ResultMsg;
 import cn.entity.TbMessage;
 import cn.constant.ResultStatus;
-import cn.service.MessageService;
+import cn.service.IMessageService;
 import cn.util.EmptyUtils;
 import cn.util.IpUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +20,7 @@ public class MessageController {
     private static int pageSize = 8;
 
     @Autowired
-    private MessageService messageService;
+    private IMessageService IMessageService;
 
     @Autowired
     private IpUtil ipUtil;
@@ -37,7 +37,7 @@ public class MessageController {
         //保存用户IP
         tbMessage.setUserIp(ipUtil.getIpAddr(request));
 
-        int code = messageService.insertUserMsg(tbMessage);
+        int code = IMessageService.insertUserMsg(tbMessage);
         if(code == 0) {
             resultMsg.setCode(ResultStatus.FAIL.getId());
             resultMsg.setMsg("system error, Message failure!");
@@ -51,7 +51,7 @@ public class MessageController {
     public ResultMsg getMessageCount() {
         ResultMsg msg = new ResultMsg();
         msg.setCode(ResultStatus.SUCCESS.getId());
-        msg.setData(messageService.getMessageCount());
+        msg.setData(IMessageService.getMessageCount());
         return msg;
     }
 
@@ -59,7 +59,7 @@ public class MessageController {
     public ResultMsg getMessage(int pageNum) {
         ResultMsg msg = new ResultMsg();
         msg.setCode(ResultStatus.SUCCESS.getId());
-        msg.setData(messageService.getMessageList(pageNum, pageSize));
+        msg.setData(IMessageService.getMessageList(pageNum, pageSize));
         return msg;
     }
 

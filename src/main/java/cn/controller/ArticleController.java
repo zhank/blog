@@ -2,7 +2,7 @@ package cn.controller;
 
 import cn.constant.ResultMsg;
 import cn.entity.TbArticle;
-import cn.service.ArticleService;
+import cn.service.IArticleService;
 import cn.util.EmojiCharacterUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -21,7 +21,7 @@ import java.util.Date;
 public class ArticleController {
 
     @Autowired
-    private ArticleService articleService;
+    private IArticleService IArticleService;
 
     @PostMapping("publishArticle")
     public ResultMsg publishArticle(@RequestBody TbArticle tbArticle, HttpServletRequest request) {
@@ -30,7 +30,7 @@ public class ArticleController {
         tbArticle.setArticleCreate(new Date());
         tbArticle.setArticleUpdate(new Date());
         tbArticle.setArticleContent(EmojiCharacterUtil.escape(tbArticle.getArticleContent()));
-        int flag = articleService.insertArticle(tbArticle);
+        int flag = IArticleService.insertArticle(tbArticle);
         if(flag == 1) {
             resultMsg.setCode(200);
             resultMsg.setMsg("发布成功");

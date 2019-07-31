@@ -4,7 +4,7 @@ import cn.entity.TbMessage;
 
 import java.util.List;
 
-public interface MessageService {
+public interface IMessageService {
 
     /**
      * 获取留言个数

@@ -1,3 +1,16 @@
+DROP TABLE IF EXISTS `tb_user`;
+CREATE TABLE `tb_user` (
+  `id` varchar(50) NOT NULL,
+  `username` varchar(20) DEFAULT NULL,
+  `password` varchar(20) DEFAULT NULL,
+  `phone` varchar(11) DEFAULT NULL,
+  `email` varchar(30) DEFAULT NULL,
+  `creatDate` datetime,
+  `updateDate` datetime,
+  `status` int,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 DROP TABLE IF EXISTS `tb_message`;
 CREATE TABLE `tb_message` (
   `message_id` varchar(32) NOT NULL,

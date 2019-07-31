@@ -2,7 +2,7 @@ package cn.service.impl;
 
 import cn.dao.MessageDao;
 import cn.entity.TbMessage;
-import cn.service.MessageService;
+import cn.service.IMessageService;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,7 +13,7 @@ import java.util.List;
  * 留言版实现类
  */
 @Service
-public class MessageServiceImpl implements MessageService {
+public class IMessageServiceImpl implements IMessageService {
 
     @Autowired
     private MessageDao messageDao;

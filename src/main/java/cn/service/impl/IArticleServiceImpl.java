@@ -2,7 +2,7 @@ package cn.service.impl;
 
 import cn.dao.ArticleDao;
 import cn.entity.TbArticle;
-import cn.service.ArticleService;
+import cn.service.IArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
  * 文章业务层
  */
 @Service
-public class ArticleServiceImpl implements ArticleService {
+public class IArticleServiceImpl implements IArticleService {
 
     @Autowired
     private ArticleDao articleDao;
