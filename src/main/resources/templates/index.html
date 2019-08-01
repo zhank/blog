@@ -12,8 +12,7 @@
 	<link href="img/logo/logo.ico" rel="shortcut icon" />
 	<script src="plugin/jquery.min.js"></script>
 	<script src="plugin/bootstrap/js/bootstrap.min.js"></script>
-	<!--<script type="text/javascript" src="plugin/jquery.page.js"></script>-->
-	<!--<script src="js/snowy.js"></script>-->
+	<script src="js/common.js"></script>
 
 	<body>
 		 <!-- header -->
@@ -324,24 +323,4 @@
 		<!-- footer -->
         <div id="footer"></div>
 	</body>
-	<script type="text/javascript">
-		var $backToTopEle = $('<a href="javascript:void(0)" class="Hui-iconfont toTop" title="返回顶部" alt="返回顶部" style="display:none">^</a>').appendTo($("body")).click(function() {
-			$("html, body").animate({ scrollTop: 0 }, 120);
-		});
-		var backToTopFun = function() {
-			var st = $(document).scrollTop(),
-				winh = $(window).height();
-			(st > 0) ? $backToTopEle.show(): $backToTopEle.hide();
-			/*IE6下的定位*/
-			if(!window.XMLHttpRequest) {
-				$backToTopEle.css("top", st + winh - 166);
-			}
-		};
-
-		$(function() {
-			$(window).on("scroll", backToTopFun);
-			backToTopFun();
-		});
-	</script>
-
 </html>

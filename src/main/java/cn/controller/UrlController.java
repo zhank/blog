@@ -90,4 +90,16 @@ public class UrlController {
         return "writeArticle";
     }
 
+    //测试
+    @GetMapping("main")
+    public String getMain() {
+        return "main";
+    }
+
+    //测试
+    @GetMapping("index2")
+    public String getIndex2() {
+        return "index2";
+    }
+
 }

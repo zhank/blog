@@ -2,10 +2,13 @@ server:
     port: 8090
     tomcat:
         uri-encoding: UTF-8
+    session:
+        time: 60
 jsoso:
     token: 600
+web:
+    name: jsoso
 spring:
-
     http:
         encoding:
             charset: UTF-8
@@ -20,6 +23,9 @@ spring:
             max-active: 50
             max-idle: 10
             max-wait: 10000
+            dbcp2:
+                validation-query: SELECT 1
+                time-between-eviction-runs-millis: 18800
         url: jdbc:mysql://106.14.7.24:3306/blog?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
         username: root
     devtools:
@@ -67,3 +73,10 @@ system:
     filepath: E:\workspace\images
     #windows下用这个filepath: D:\temp\upload   linux :/vdb1/xxx/vue/resources
     urlpath: http://127.0.0.1:8090/uploadImg/
+
+#日志
+#日志级别从低到高分为TRACE < DEBUG < INFO < WARN < ERROR < FATAL，如果设置为WARN，则低于WARN的信息都不会输出
+logging:
+    level:
+        root: INFO
+    config: classpath:config/logback.xml
