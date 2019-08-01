@@ -54,6 +54,12 @@ public class UrlController {
         return "moodList";
     }
 
+    //header
+    @GetMapping("header")
+    public String getHeader() {
+        return "header";
+    }
+
     //footer
     @GetMapping("footer")
     public String getFooter() {
